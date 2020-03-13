@@ -11,7 +11,7 @@ __**Where to get Emacs**__
 
 __**Why Emacs?**__
 
-Many people look at how poor the out of the box experience with Emacs is, compare it to VS Code and dismiss Emacs as an option, stating that it's simply too difficult to use, it's ugly, and that concludes their experience with Emacs. I'm going to attempt to persuade you for a few moments of the following points:
+Many people look at how poor the out of the box experience with Emacs is, compare it to VS Code and dismiss Emacs as an option, stating that it's simply too difficult to use, it's ugly, and that concludes their experience with Emacs. We're going to attempt to persuade you for a few moments of the following points:
 
 1. The out of the box experience with Emacs doesn't have to be so barebones.
 2. The learning curve is actually substantially lower than you might think it is.
