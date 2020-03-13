@@ -157,11 +157,7 @@ __**Resources**__
 - <https://www.masteringemacs.org/>
 
 __**Technology Champions**__
-
-**Holy Mode**
 - Dreameh#0001
 - Lgneous#2937
-- speckledlemon#0470
 - shan#6094
-**Evil Mode**
-- Fox#0001
+- speckledlemon#0470
