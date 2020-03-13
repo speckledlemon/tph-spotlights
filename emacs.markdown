@@ -91,7 +91,7 @@ Stuck in the middle of a command? Mash `C-g`!
 
 The first obvious question to ask here about operating an evil-mode configuration is "how close is evil mode to regular vim". The answer is: Very. Certainly as a long term vim user, I've never noticed anything out of place. So if you have read vimtutor, all of that applies here.
 
-Some basic operations for you, I have taken the liberty of writing the mnemonic with them:
+Some basic operations along with their mnemonics:
 
 **Open a file**: In normal mode `:e <file name>` (e is for EDIT)
 
@@ -102,7 +102,7 @@ Some basic operations for you, I have taken the liberty of writing the mnemonic 
 **Delete a file**: In normal mode `!rm <file.txt>` (rm is for REMOVE)
 
 **Some evil mode notes**
-Personally, I don't use the file operations from evil mode. I just use evil mode for the text navigation and manipulation. For searching I use swiper which I've bound to C-s, and I use Helm to find my files. Counsel is a popular alternative to Helm. That's the beauty of it, you can mix and match whatever makes more sense to you personally.
+It's possible to ignore the file operations from evil mode and just use it for text navigation and manipulation. Alternatives are Swiper, most commonly bound to bound to `C-s`, and Helm to find files. Counsel is a popular alternative to Helm. That's the beauty of it, you can mix and match whatever makes more sense to you.
 
 **Other General Points**
 
