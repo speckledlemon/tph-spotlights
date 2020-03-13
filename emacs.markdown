@@ -1,6 +1,6 @@
 __**What is Emacs?**__
 
-Emacs is a Lisp interpreter. It is commonly used as a **text editor** for reading and writing code, although you can use it to write academic documents or do your taxes, if that is more your style. It has a very rich history and it is almost certainly the most flexible text editor that is publicly available. As such, it tends to be the case that one dev’s use of Emacs is **very** different than another’s.
+Emacs is a Lisp interpreter. It is commonly used as a **text editor** for reading and writing code, although you can use it to write academic documents or do your taxes, if that is more your style. It has a rich history and it is almost certainly the most flexible text editor that is publicly available. As such, it tends to be the case that one dev’s use of Emacs is **very** different than another’s.
 
 __**Where to get Emacs**__
 - macOS: http://wikemacs.org/wiki/Installing_Emacs_on_OS_X
@@ -42,9 +42,9 @@ What this will do is install a sane, default configuration for you. There is ver
 
 **Point two: The Emacs learning curve myth**
 
-A lot of times people will associate Emacs with having a very steep learning curve. This is not true on any front actually, even for the base, clunky, ugly Emacs you saw earlier. The reason for this is that Emacs is actually self-documenting. It does a really good job of helping people to learn it, you just have to be *willing* to learn it. It can take 1 - 2 days to get very familiar with all of the basics (Described in the basics section) and then maybe a further 1 - 2 weeks to be as productive as you were before. After that, the sky's the limit. We’ve included some basic configurations for a lot of common programming languages in <https://github.com/the-programmers-hangout/emacs/blob/master/.emacs.d/config.org>, written in such a way that you can just pop them into your configuration.
+A lot of times people will associate Emacs with having a very steep learning curve. This is not true on any front actually, even for the base, clunky, ugly Emacs you saw earlier. The reason for this is that Emacs is actually self-documenting. It does a really good job of helping people to learn it, you just have to be *willing* to learn it. It can take 1 - 2 days to get familiar with all of the basics (Described in the basics section) and then maybe a further 1 - 2 weeks to be as productive as you were before. After that, the sky's the limit. We’ve included some basic configurations for a lot of common programming languages in <https://github.com/the-programmers-hangout/emacs/blob/master/.emacs.d/config.org>, written in such a way that you can just pop them into your configuration.
 
-Additionally, packages like "which-key" and "discover-my-major" can help you learn very complex packages/plugins very trivially. I almost never have to google stuff to figure out how to use Emacs because just asking Emacs is faster than asking Google.
+Additionally, packages like "which-key" and "discover-my-major" can help you learn complex packages/plugins trivially. I almost never have to google stuff to figure out how to use Emacs because just asking Emacs is faster than asking Google.
 
 **Point three: Emacs is capable of much more than any other editor is, generally speaking.**
 
