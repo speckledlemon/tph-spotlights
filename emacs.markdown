@@ -48,13 +48,13 @@ Additionally, packages like `which-key` and `discover-my-major` can help you lea
 
 **Point three: Emacs is capable of much more than any other editor is, generally speaking.**
 
-So up until this point, we've just been laying out the ground work which indicates what makes Emacs equal to your old editor. It's certainly the case that Emacs isn't as good in some specific cases, for example, with Kotlin. This language is quite the edge case, though, as it's usually the case that for newer languages Emacs is very good. However, generally speaking it's an equal playing field, all things considered.
+So up until this point, we've just been laying out the ground work which indicates what makes Emacs equal to your old editor. It's certainly the case that Emacs isn't as good in some specific cases such as Kotlin. This language is an edge case, as usually for newer languages Emacs is quite good. However, generally speaking it's an equal playing field, all things considered.
 
 So what can Emacs do that your current editor might not be able to? Below you can find a short list of items that demonstrate the raw power present within Emacs, that might help to persuade you to use it.
 
 - Emacs can be used as a Window manager using EXWM. Say goodbye to i3wm.
 - Emacs has a web browser built into it (EWW) - the name is fitting because it's not pretty, but I've used it so many times for just quickly jumping to a link from the comfort of my editor.
-- Emacs allows you to write a *literate configuration file*. This means that the configuration file you have in Emacs is super easy to understand. (Anecdote in bound) Back when I was using vim, I had a very long .vimrc which essentially consisted of stuff that I had copy/pasted from stack-overflow, that I had no real understanding of. In Emacs, I've made my entire configuration file myself, and I can understand it all, because it's just code with associated documentation.
+- Emacs allows you to write a *literate configuration file*. This means that the configuration file you have in Emacs is super easy to understand. No longer do you need to just copy configuration from Stack Overflow without understanding what's going on, since full documentation can easily live right next to config snippets.
 - Emacs has Eshell, which is actually significantly more powerful than the regular terminal you are used to. It is a *Lisp REPL* as well as a fully fledged terminal. This can be immensely powerful. Additionally, because Eshell outputs to just a regular text buffer inside of emacs, you can search, yank, paste, and manipulate text in the same way that you can throughout the rest of Emacs.
 - Org mode is one of the most powerful document formats available, and it requires no special encoding to use it, it's just a plain text file. You can hook it into pandoc, too. It's worth noting that you can export to LaTeX and it's much more ergonomic than regular LaTeX.
 - Vim emulation inside of Emacs is basically perfect. If you are persuaded by any promise that you can find from vim, Emacs has the ability to use *everything* inside of vim.
