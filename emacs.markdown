@@ -44,7 +44,7 @@ What this will do is install a sane, default configuration for you. There is ver
 
 A lot of times people will associate Emacs with having a very steep learning curve. This is not true on any front actually, even for the base, clunky, ugly Emacs you saw earlier. The reason for this is that Emacs is actually self-documenting. It does a really good job of helping people to learn it, you just have to be *willing* to learn it. It can take 1 - 2 days to get familiar with all of the basics (Described in the basics section) and then maybe a further 1 - 2 weeks to be as productive as you were before. After that, the sky's the limit. We've included some basic configurations for a lot of common programming languages in <https://github.com/the-programmers-hangout/emacs/blob/master/.emacs.d/config.org>, written in such a way that you can just pop them into your configuration.
 
-Additionally, packages like "which-key" and "discover-my-major" can help you learn complex packages/plugins trivially. I almost never have to google stuff to figure out how to use Emacs because just asking Emacs is faster than asking Google.
+Additionally, packages like `which-key` and `discover-my-major` can help you learn complex packages and plugins trivially. We almost never have to Google stuff to figure out how to use Emacs, because just asking Emacs is faster: there are built-in functions like `describe-key`, `describe-function`, and `describe-variable` that automatically do what they say for every package in your configuration.
 
 **Point three: Emacs is capable of much more than any other editor is, generally speaking.**
 
@@ -78,11 +78,11 @@ Keychords: They're represented by one or more modifiers followed by a dash and a
 **Holy Mode Users**
 
 
-**Open a file**: C-x C-f (f is for FILE)
+**Open a file**: `C-x C-f` (`f` is for FILE)
 
-**Save a file**: C-x C-s (s is for SAVE)
+**Save a file**: `C-x C-s` (`s` is for SAVE)
 
-**Searching**: C-s (s is for SEARCH) OR C-r to search backwards (r is for REVERSE)
+**Searching**: `C-s` (`s` is for SEARCH) OR `C-r` to search backwards (`r` is for REVERSE)
 
 Quitting Emacs: `C-x C-c`
 Stuck in the middle of a command? Mash `C-g`!
@@ -139,7 +139,7 @@ Because of Emacs' long history, there are a number of solutions for accessing te
 - `eshell`: Unlike all the other emulators, this one lets you evaluate Elisp directly at the prompt. See <https://www.gnu.org/software/emacs/manual/html_node/eshell/index.html> for how to best take advantage of this power.
 
 __**Configuration with Elisp**__
-At this point, you've already seen little snippets of the principal way Emacs is configured: using the language Emacs Lisp, or Elisp for short. Elisp is another common sticking point for learning Emacs, with lots of the "look at all these parens" type of complaints seen surrounding Lisps. Needing to be an Elisp hacker to get a fully-functional Emacs configuration is a myth! This spotlight isn't meant to go over everything, but we'd be happy to answer any questions or concerns. We're also actively working on the TPH Emacs repository as a go-to resource. :yeetmacs: <https://github.com/the-programmers-hangout/emacs>
+At this point, you've already seen little snippets of the principal way Emacs is configured: using the language Emacs Lisp, or Elisp for short. Elisp is another common sticking point for learning Emacs, with lots of the "look at all these parens" type of complaints seen surrounding Lisps. Needing to be an Elisp hacker to get a fully functional Emacs configuration is a myth! This spotlight isn't meant to go over everything, but we'd be happy to answer any questions or concerns. We're also actively working on the TPH Emacs repository as a go-to resource. :yeetmacs: <https://github.com/the-programmers-hangout/emacs>
 
 __**Setting up Emacs is hard, here are some prebuilt Emacs distributions you might want to try**__
 - <https://www.spacemacs.org/> Spacemacs is one of the best ways to get a working _and_ good-looking configuration out-of-the-box.
