@@ -1,6 +1,6 @@
 __**What is Emacs?**__
 
-Emacs is a Lisp interpreter. It is commonly used as a **text editor** for reading and writing code, although you can use it to write academic documents or do your taxes, if that is more your style. It has a rich history and it is almost certainly the most flexible text editor that is publicly available. As such, it tends to be the case that one dev's use of Emacs is **very** different than another's.
+Emacs is a Lisp interpreter. It is commonly used as a **text editor** for reading and writing code, although you can use it to write academic documents or do your taxes, if that is more your style. It has a rich history and it is almost certainly the most flexible text editor that is publicly available. As such, it tends to be the case that one dev's use of Emacs is **exceptionally** different from another's.
 
 __**Where to get Emacs**__
 - macOS: http://wikemacs.org/wiki/Installing_Emacs_on_OS_X
@@ -36,13 +36,13 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 (Note: For Windows users, you will need to point the last part of the command `~/.emacs.d` to wherever you have set your home directory to.)
 
-This will install **Spacemacs** for you. Spacemacs is an out of the box experience for Emacs, which you will need to configure and change very little. When you first open Spacemacs, it'll ask you some questions, one of the questions is do you want to use Holy or Evil mode. If you are familiar with vim, select evil mode. If not, select holy mode (Holy mode is the regular, default Emacs, without evil mode, sometimes referred to as "vanilla" Emacs).
+This will install **Spacemacs** for you. Spacemacs is *distribution* for Emacs, which you will need to configure and change very little. When you first open Spacemacs, it'll ask you some questions, one of the questions is do you want to use Holy or Evil mode. If you are familiar with Vim, select Evil mode. If not, select holy mode (Holy mode is the regular, default Emacs, without Evil mode, sometimes referred to as "vanilla" Emacs).
 
-What this will do is install a sane, default configuration for you. There is very little learning that goes into learning Spacemacs initially. We've documented it later. If a good out of the box experience is super key for you, it's recommended that you use Spacemacs, as that is the singular focus of Spacemacs.
+What this will do is install a sane, default configuration for you. If a good out-of-the-box experience is super key for you, it's recommended that you use Spacemacs, as that is the singular focus of Spacemacs.
 
 **Point two: The Emacs learning curve myth**
 
-A lot of times people will associate Emacs with having a very steep learning curve. This is not true on any front actually, even for the base, clunky, ugly Emacs you saw earlier. The reason for this is that Emacs is actually self-documenting. It does a really good job of helping people to learn it, you just have to be *willing* to learn it. It can take 1 - 2 days to get familiar with all of the basics (Described in the basics section) and then maybe a further 1 - 2 weeks to be as productive as you were before. After that, the sky's the limit. We've included some basic configurations for a lot of common programming languages in <https://github.com/the-programmers-hangout/emacs/blob/master/.emacs.d/config.org>, written in such a way that you can just pop them into your configuration.
+A lot of times people will associate Emacs with having a very steep learning curve. This is not true on any front actually, even for the base, clunky, ugly Emacs you saw earlier. The reason for this is that Emacs is actually self-documenting. It does a really good job of helping people to learn it, you just have to be *willing* to learn it. It can take 1-2 days to get familiar with all of the basics (Described in the basics section) and then maybe a further 1-2 weeks to be as productive as you were before. After that, the sky's the limit. We've included some basic configurations for a lot of common programming languages in <https://github.com/the-programmers-hangout/emacs/blob/master/.emacs.d/config.org>, written in such a way that you can just pop them into your configuration, in the event that you aren't using Spacemacs or want to see how the sausage is made.
 
 Additionally, packages like `which-key` and `discover-my-major` can help you learn complex packages and plugins trivially. We almost never have to Google stuff to figure out how to use Emacs, because just asking Emacs is faster: there are built-in functions like `describe-key`, `describe-function`, and `describe-variable` that automatically do what they say for every package in your configuration.
 
@@ -56,8 +56,8 @@ So what can Emacs do that your current editor might not be able to? Below you ca
 - Emacs has a web browser built into it (EWW) - the name is fitting because it's not pretty, but I've used it so many times for just quickly jumping to a link from the comfort of my editor.
 - Emacs allows you to write a *literate configuration file*. This means that the configuration file you have in Emacs is super easy to understand. No longer do you need to just copy configuration from Stack Overflow without understanding what's going on, since full documentation can easily live right next to config snippets.
 - Emacs has Eshell, which is actually significantly more powerful than the regular terminal you are used to. It is a *Lisp REPL* as well as a fully fledged terminal. This can be immensely powerful. Additionally, because Eshell outputs to just a regular text buffer inside of emacs, you can search, yank, paste, and manipulate text in the same way that you can throughout the rest of Emacs.
-- Org mode is one of the most powerful document formats available, and it requires no special encoding to use it, it's just a plain text file. You can hook it into pandoc, too. It's worth noting that you can export to LaTeX and it's much more ergonomic than regular LaTeX.
-- Vim emulation inside of Emacs is basically perfect. If you are persuaded by any promise that you can find from vim, Emacs has the ability to use *everything* inside of vim.
+- Org mode is one of the most powerful document formats available, and it requires no special encoding to use it, it's just a plain text file. You can hook it into pandoc, too. It's worth noting that you can export to LaTeX, and writing Org documents is much more ergonomic than writing regular LaTeX.
+- Vim emulation inside of Emacs is basically perfect. If you are persuaded by any promise that you can find from Vim, Emacs has the ability to use *everything* inside of Vim.
 
 __**Emacs Basics**__
 
@@ -74,9 +74,8 @@ The list of available modifiers:
 - `H`, the hyper key, which is usually unbound by default on most systems
 - `A`, the alt key, which is also unbound, this is not the actual alt key
 
-Keychords: They're represented by one or more modifiers followed by a dash and any key, such that `C-b` is control+b and `M-s-s` is meta+super+s
+Keychords: They're represented by one or more modifiers followed by a dash and any key, such that `C-b` is control+b and `M-s-s` is meta+super+s.
 **Holy Mode Users**
-
 
 **Open a file**: `C-x C-f` (`f` is for FILE)
 
@@ -89,7 +88,7 @@ Stuck in the middle of a command? Mash `C-g`!
 
 **Evil Mode Users**
 
-The first obvious question to ask here about operating an evil-mode configuration is "how close is evil mode to regular vim". The answer is: Very. Certainly as a long term vim user, I've never noticed anything out of place. So if you have read vimtutor, all of that applies here.
+The first obvious question to ask here about operating an Evil-mode configuration is "how close is Evil mode to regular Vim". The answer is: Very. If you have read Vimtutor, all of that applies here.
 
 Some basic operations along with their mnemonics:
 
@@ -101,8 +100,8 @@ Some basic operations along with their mnemonics:
 
 **Delete a file**: In normal mode `!rm <file.txt>` (rm is for REMOVE)
 
-**Some evil mode notes**
-It's possible to ignore the file operations from evil mode and just use it for text navigation and manipulation. Alternatives are Swiper, most commonly bound to bound to `C-s`, and Helm to find files. Counsel is a popular alternative to Helm. That's the beauty of it, you can mix and match whatever makes more sense to you.
+**Some Evil mode notes**
+As an example of Emacs' flexibility, it's possible to ignore the file operations from Evil mode and just use it for text navigation and manipulation. Alternatives are Swiper, most commonly bound to bound to `C-s`, and Helm to find files. Counsel is a popular alternative to Helm. That's the beauty of it, you can mix and match whatever makes more sense to you.
 
 **Other General Points**
 
@@ -111,7 +110,7 @@ Emacs' terminology relating to what people usually refers to as windows and buff
 A *buffer* refers to the data associated with a certain type of file or action, for example the content of a file, a terminal emulator or an image. They can be hidden or displayed in a window.
 A *window* refers to a panel or split inside a frame, it is used to display a buffer.
 A *frame* refers to the graphical window you are using Emacs in, it contains windows, you can have multiple frames per Emacs instances.
-Here is a more detailed explanation on stackexchange with an illustration: <https://emacs.stackexchange.com/questions/13583/whats-the-difference-between-a-buffer-a-file-a-window-and-a-frame>
+Here is a more detailed explanation on Stack Exchange with an illustration: <https://emacs.stackexchange.com/questions/13583/whats-the-difference-between-a-buffer-a-file-a-window-and-a-frame>
 
 **Major and Minor modes**
 Modes are Emacs' way of understanding what you are doing and what you want to do.
@@ -132,7 +131,7 @@ Emacs includes a _dir_ ectory _ed_ itor mode called `dired` that lets you view d
 
 **Eshell/Term/other terminals**
 Because of Emacs' long history, there are a number of solutions for accessing terminal functionality. Further explanations are in https://unix.stackexchange.com/q/104325.
-- `M-!`: not a full-featured shell, but lets you run a single command quickly, like `!` in vim.
+- `M-!`: not a full-featured shell, but lets you run a single command quickly, like `!` in Vim.
 - `shell`: The original Emacs terminal implementation. Because of how it runs the underlying shell, its color display support is flaky and curses apps don't work.
 - `term` and `ansi-term`: A newer terminal implementation, where everything looks and works closer to what you'd expect. You probably want `ansi-term`, which will open a new buffer with a fresh terminal every time it's called.
 - Libvterm: A much more performant and customizable terminal, but needs `(use-package vterm)` and for Emacs to be compiled using `--with-modules`.
@@ -143,7 +142,7 @@ At this point, you've already seen little snippets of the principal way Emacs is
 
 __**Setting up Emacs is hard, here are some prebuilt Emacs distributions you might want to try**__
 - <https://www.spacemacs.org/> Spacemacs is one of the best ways to get a working _and_ good-looking configuration out-of-the-box.
-- <https://github.com/hlissner/doom-emacs> Doom is Spacemacs taken to the extreme: very opinionated, evil-focused, and designed to go fast.
+- <https://github.com/hlissner/doom-emacs> Doom is Spacemacs taken to the extreme: very opinionated, Evil-focused, and designed to go really, really fast.
 - <http://www.emacs-bootstrap.com/> Interactively generate a config with only the languages you care about.
 If you want a non-Spacemacs experience, closer to what you'd get if you configured Emacs from scratch, but in a literate style <https://en.wikipedia.org/wiki/Org-mode>, use our config wholesale: `git clone https://github.com/the-programmers-hangout/emacs.git ~/tphmacs; ln -sv ~/tphmacs ~/.emacs.d`. Pull requests welcome!
 
