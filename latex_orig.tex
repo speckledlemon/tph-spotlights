@@ -1,0 +1,74 @@
+\documentclass[]{report}
+
+\usepackage{biblatex}
+
+% Title Page
+\title{The Programmer's Hangout \LaTeX{} Showcase}
+\author{\textit{Triston\#0183, \textbf{SIGN HERE IF YOU CONTRIBUTED}}}
+
+\addbibresource{wholebibliography.bib}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+%---------------------------------------------------------
+\chapter{\LaTeX{} Overview}
+%---------------------------------------------------------
+\section{What is \LaTeX{}?}
+	\LaTeX{} is a system for typesetting documents, it is extremely popular in the scientific and academic communities and their associated industries.
+%---------------------------------------------------------
+\section{Why \LaTeX{}?} 
+	\LaTeX{} is available on just about any computer, even your phone!
+	You can write \LaTeX{} documents like you would a program, using your preferred editor, or a tailor made IDE!
+	Editors like Microsoft\texttrademark{} Visual Studio Code have extensions that make writing documents a breeze, including live preview.
+	\LaTeX{} documents can be exported to a number of different formats, arguably the most common being PDF.
+	You can bet that \LaTeX{} documents will still be around into the future, as they will be compatible with new releases, and, as previously stated, you can export to a plethora of formats.
+	One of the coolest things about \LaTeX{} is how, out of the box, you can auto-generate your Bibliography, a method I prefer is to get the URL or ISBN of a resource and paste it into \textit{https://zbib.org/}
+%---------------------------------------------------------
+\section{How do I Install \LaTeX{}?}
+	On most operating systems \LaTeX{} is free and easy to install, in this section we will cover how to install it on Microsoft\texttrademark{} Windows, Mac OS X, and most of the popular Linux distributions as of \today{}.
+	\subsubsection{Microsoft\texttrademark{} Windows}
+	    MiKTeX is the preferred distribution for the Microsoft\texttrademark{} Windows platform, you can find executables for it on their website: \textit{https://miktex.org/}
+    \subsubsection{Mac OS X}
+        MacTeX is the preferred distribution for Mac OS X users, you can find out more on their website: \textit{http://www.tug.org/mactex/}
+    \subsubsection{Debian GNU/Linux}
+        Users of Debian based distributions are recommended to install the \textit{texlive} package, and optionally the \textit{biber} package if they wish to use \textit{biblatex}, this package is required to compile this document correctly.
+    \subsubsection{Arch GNU/Linux}
+        Users of Arch based distributions are recommended to install the \textit{texlive-most} package, and optionally the \textit{biber} package if they wish to use \textit{biblatex}, which is required to compile this document correctly.
+    \subsubsection{Fedora GNU/Linux}
+        Fedora users should install the \textit{texlive-scheme-medium} package via \textit{dnf} and optionally \textit{biber} if they wish to use \textit{biblatex} which is required to compile this document correctly.
+\section{What should I use to typeset in \LaTeX?}
+    It's recommended that you use a \LaTeX{} IDE while learning so that you can see exactly how your documents look while making them, you can also just pair your favorite text editor with a PDF viewer.
+%---------------------------------------------------------
+\chapter{Babbies First \LaTeX{}}
+\section{"Hello World!"}
+    In this section we will go over a simple "Hello World!" program in \LaTeX{}, nothing too special.
+\begin{verbatim}
+\documentclass{article}
+\title{"Hello World!"}
+\author{Me!}
+\begin{document}
+    \maketitle
+    \section{Example Section!}
+        Hello World!
+\end{document}
+\end{verbatim}
+\subsection{Analysis}
+    First we tell TeX what kind of document we want, by default TeX comes with a few preinstalled template classes from which we can make stylish documents. In this case we want our document to be an article. We can do this with \verb+\documentclass{article}+, you can read more about document classes at this website \textit{https://texfaq.org/FAQ-clsvpkg}. Now that we've defined what we want our document to look like, we gotta name it! Naming it is as easy as \verb+\title{DESIRED_TITLE}+! Now we have a named document, that's all well and good, but who made it? How will we know? Lucky for us, it's also very straightforward, we use \verb+\author{YOUR_NAME}+ to tell TeX who the author is, keep in mind that it isn't required that you have a title or an author, we're just doing this so you can understand the basics of making a real \LaTeX{} document! Now that we have named our article, and put our name on it, we can begin the document, which is just as easy as you'd expect: \verb+\begin{document}+! After we make the title with \verb+\maketitle+, we can then make a section for all our juicy content, do note that \verb+\maketitle+ and \verb+\section{}+ are both optional, but it's very nice to have them. You give your section a name just like you named your document and put your name on it. After we've written what we want, in this case we wrote "Hello World!", we must end the document \textit{environment}, so the that TeX knows exactly where to stop, it'll throw a fit otherwise.
+\chapter{Conclusion}
+\section{Where to next?}
+    If the idea of \LaTeX{} intrigues you, we invite you to look at the source code of this document, to get an idea of how this all works.
+    Try to write an example document about something that you'd do in your life.
+    Maybe you can use the \textit{letter} document class and write a letter to your friend to impress them with your awesome \LaTeX{} skills!
+\section{References for Further Learning}
+    There are tons of resources that are dedicated to teaching \LaTeX{}, some notable ones are: \\
+    \begin{itemize}
+        \item Overleaf: \textit{https://www.overleaf.com/learn}
+        \item \LaTeX{} Tutorial \textit{https://www.latex-tutorial.com/}
+        \item Luke Smith's \LaTeX{} Playlist (URL Shortened): \textit{https://tknk.io/Kyck}
+    \end{itemize}
+%---------------------------------------------------------
+\nocite{*} % Cites all sources all sneaky-beaky like so we can show all of our sources
+\printbibliography
+\end{document}
