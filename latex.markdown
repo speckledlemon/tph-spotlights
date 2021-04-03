@@ -1,5 +1,18 @@
 ## What is LaTeX?
 
+LaTeX is a typesetting system used to create any kind of document with text: papers, books, letters, and even posters. Unlike word processors, it enforces the separation of formatting (how the text looks) from the actual content, while giving even more granular control over appearance if desired.
+
+Writing LaTeX is similar to Markdown or HTML: it's a plain text markup language with macros to indicate properties that should be applied to parts of the text, but with a large ecosystem of packages which provide macros for handling different writing systems and written languages, formatting code, and [putting coffee rings on paper](http://legacy.hanno-rein.de/hanno-rein.de/archives/349). The file is then run through a compiler which performs text and page layout, then produces a PDF.
+
+<!-- It combines a macro-based markup language with a  -->
+
+<!-- To write in LaTeX  -->
+
+### Why use LaTeX instead of a word processor or another markup language?
+
+Compared to using a word processor, it automatically comes with all the benefits of being based on plain text:
+- Inserting fully-customizable tables, equations, and images
+
 ### Getting up and running
 
 The quickest way to get started is to make an account on [Overleaf](https://www.overleaf.com) and create a new project. It's entirely web-based and allows you to live edit with multiple people (like Google Docs) and even track changes. It also has Dropbox, Git, and GitHub integration.
