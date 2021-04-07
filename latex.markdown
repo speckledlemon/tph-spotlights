@@ -17,12 +17,11 @@ Compared to using a word processor, it automatically comes with all the benefits
 
 The quickest way to get started is to make an account on [Overleaf](https://www.overleaf.com) and create a new project. It's entirely web-based and allows you to live edit with multiple people (like Google Docs) and even track changes. It also has Dropbox, Git, and GitHub integration.
 
-If you prefer a local installation,
+If you prefer a local installation, you must install a *distribution*, which has the same meaning as for Linux: the core and packages are fundamentally the same among each, but the nuts and bolts that deal with how everything is installed and how packages are managed are different. Generally you don't need to worry about the differences, but you do need to pick one. There are [many](https://tex.stackexchange.com/q/239199) available; some common ones are:
+- Windows: [MiKTeX](https://miktex.org/)
+- macOS: [MacTeX](http://tug.org/mactex/)
+- Linux: TeX Live, most likely through your distro package manager
 
-- If you want to install,
-  - Windows: Miktex
-  - macOS: TeX Live
-  - Linux: distro package manager
 - How to "compile"?
 
 ### Topics to cover
