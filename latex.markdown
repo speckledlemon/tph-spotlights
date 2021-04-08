@@ -8,21 +8,31 @@ Writing LaTeX is similar to Markdown or HTML: it's a plain text markup language 
 
 <!-- To write in LaTeX  -->
 
-### Why use LaTeX instead of a word processor or another markup language?
+<!-- ### Why use LaTeX instead of a word processor or another markup language? -->
 
-Compared to using a word processor, it automatically comes with all the benefits of being based on plain text:
-- Inserting fully-customizable tables, equations, and images
+<!-- Compared to using a word processor, it automatically comes with all the benefits of being based on plain text: -->
+<!-- - Inserting fully-customizable tables, equations, and images -->
 
 ### Getting up and running
 
-The quickest way to get started is to make an account on [Overleaf](https://www.overleaf.com) and create a new project. It's entirely web-based and allows you to live edit with multiple people (like Google Docs) and even track changes. It also has Dropbox, Git, and GitHub integration.
+#### Online
+
+The quickest way to get started is to make an account on [Overleaf](https://www.overleaf.com) and create a new project. It's entirely web-based and allows you to live edit with multiple people (like Google Docs) and even track changes. It also has Dropbox, Git, and GitHub integration. Even if collaboration isn't important for you, generating the PDF only requires clicking a single button.
+
+#### Locally
 
 If you prefer a local installation, you must install a *distribution*, which has the same meaning as for Linux: the core and packages are fundamentally the same among each, but the nuts and bolts that deal with how everything is installed and how packages are managed are different. Generally you don't need to worry about the differences, but you do need to pick one. There are [many](https://tex.stackexchange.com/q/239199) available; some common ones are:
 - Windows: [MiKTeX](https://miktex.org/)
-- macOS: [MacTeX](http://tug.org/mactex/)
+- macOS: [MacTeX](http://tug.org/mactex/), also available through Homebrew
 - Linux: TeX Live, most likely through your distro package manager
 
-- How to "compile"?
+One reason you may prefer Overleaf when trying out LaTeX is that a full local install is about 4 GB when going the most convenient route of including all the packages you could possibly want, so you don't have to worry about missing one when using a minimal install. You don't *need* packages to write LaTeX, but like third-party dependencies in programming languages, you will come to depend on certain ones over time.
+
+With a local install, you will also require ways to write LaTeX files, compile them, and view the output. There are editors like Texmaker <https://www.xm1math.net/texmaker/> that combine an editor, an automated way to generate the PDF, and a pane that lets you view the PDF, much like an IDE or a Markdown editor with preview. However, any text editor works fine, since they all have LaTeX editing modes with handy shortcuts and snippets, and the output is viewable in any PDF reader. Standalone compiling can be confusing and is a topic on its own, but a wrapper that automatically handles things like including bibliographies is `latexmk`:
+```
+$ latexmk -pdf mydocument.tex
+```
+which comes packaged with distributions.
 
 ### Topics to cover
 
@@ -34,6 +44,7 @@ If you prefer a local installation, you must install a *distribution*, which has
 - important/popular latex packages
   - AMS-LaTeX, Babel, Microtype, Notes (for collaboration)
   - I have my own "package list" (like microtype, booktabs, siunitx, braket, mhchem, fixme) but am blind to others (babel) so would appreciate some input there
+- documentation for packages: `texdoc <package_name>` on the command line, CTAN
 - Debugging
 
 ### Other todos
