@@ -34,6 +34,50 @@ $ latexmk -pdf mydocument.tex
 ```
 which comes packaged with distributions.
 
+### Writing your first document and intro to environments
+
+Create a new file, something like `hello_world.tex`, write
+```latex
+\documentclass{article}
+
+\begin{document}
+Hello, world!
+\end{document}
+```
+and then compile however you do. The result should be a PDF with big margins, the text "Hello, world!" near the top, and a lone "1" at the bottom center, which is from the automatic page numbering. Congrats on your first LaTeX document! We already see two important things:
+1. Macros in LaTeX are written like `\verygoodthingy{a,b,soup}`, where the macro called `verygoodthingy` is called with the arguments `a`, `b`, and `soup`. Two common variants are those that take options with or without keyword arguments (`\usepackage[final]{microtype}` and `\usepackage[separate-uncertainty=true,range-units=single]{siunitx}`) and those that take multiple argument blocks (`\multicolumn{3}{c}{numerical}` has 3).
+2. In order to write anything, you need to first specify the kind ("class") of document (such as `article`, `book`, `report`, `letter`, `beamer`, and many others <https://tex.stackexchange.com/q/782>), then create the main document "environment" that text will be typeset in. There are many different environments available (<https://latex.wikia.org/wiki/List_of_LaTeX_environments>), provided by built-in as well as external packages. An environment is delimited by the `begin` and `end` macros, each taking the name of the environment. All content that appears in the final output must be inside the `document` environment. Some macros must appear outside the `document` environment, but most are nested inside.
+
+To see the effect of how environments change typesetting, compare the two following documents:
+```latex
+\documentclass{article}
+
+\begin{document}
+An example polynomial is f(x) = 2.45x + 7.2.
+\end{document}
+```
+```latex
+\documentclass{article}
+
+\begin{document}
+An example polynomial is
+\begin{equation}
+f(x) = 2.45x + 7.2
+\end{equation}
+\end{document}
+```
+where you should notice that in the first example, the equation is typeset as regular text and the spacing isn't what you'd expect for a mathematical equation. It is also possible to write "inline" math, rather than the isolated and numbered "display" math,
+```latex
+\documentclass{article}
+
+\begin{document}
+An example polynomial is \(f(x) = 2.45x + 7.2\).
+\end{document}
+```
+which is placed inside `\( ... \)` delimiters.
+
+### Document structure
+
 ### Topics to cover
 
 - document structure (Sectioning, Top-Matter, Abstract, Input, Includes, Document Classes)
@@ -53,3 +97,14 @@ which comes packaged with distributions.
   - Reusing a common style file is better than copy-pasting the same preamble everywhere. Keep your style file under version control and reuse it across projects
 - convert this doc to latex (good example of using pandoc?)
 - pandoc
+
+### Advanced and random topics
+
+#### Digression: Math in LaTeX vs. Markdown, TeX vs. LaTeX
+
+Markdown writers may know the use of `$ ... $` and `$$ ... $$` delimiters to enter inline and display math. These are actually borrowed from TeX and should not be used in LaTeX, though that doesn't stop people. The correct LaTeX delimiter pairs are `\( ... \)` and `\[ ... \]`. See https://tex.stackexchange.com/a/410874 for more details.
+
+### Resources
+
+- LaTeX Wiki: <https://latex.wikia.org/wiki/Main_page>
+- TeX.SE, the LaTeX Stack Exchange: <https://tex.stackexchange.com/>
