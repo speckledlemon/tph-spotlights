@@ -1,17 +1,8 @@
 ## What is LaTeX?
 
-LaTeX is a typesetting system used to create any kind of document with text: papers, books, letters, and even posters. Unlike word processors, it enforces the separation of formatting (how the text looks) from the actual content, while giving even more granular control over appearance if desired.
+LaTeX ([pronounciation](https://tex.stackexchange.com/q/17502)) is a typesetting system used to create any kind of document with text: papers, books, letters, and even posters. Unlike word processors, it enforces the separation of formatting (how the text looks) from the actual content, while giving even more granular control over appearance if desired.
 
-Writing LaTeX is similar to Markdown or HTML: it's a plain text markup language with macros to indicate properties that should be applied to parts of the text, but with a large ecosystem of packages which provide macros for handling different writing systems and written languages, formatting code, and [putting coffee rings on paper](http://legacy.hanno-rein.de/hanno-rein.de/archives/349). The file is then run through a compiler which performs text and page layout, then produces a PDF.
-
-<!-- It combines a macro-based markup language with a  -->
-
-<!-- To write in LaTeX  -->
-
-<!-- ### Why use LaTeX instead of a word processor or another markup language? -->
-
-<!-- Compared to using a word processor, it automatically comes with all the benefits of being based on plain text: -->
-<!-- - Inserting fully-customizable tables, equations, and images -->
+Writing LaTeX is similar to Markdown or HTML: it's a plain text markup language with macros to indicate properties that should be applied to parts of the text, but with a large ecosystem of packages which provide macros for handling different writing systems and written languages, formatting code, and [putting coffee rings on paper](http://legacy.hanno-rein.de/hanno-rein.de/archives/349). The file is then run through a compiler which performs text and page layout, then produces a PDF. If you're familiar with C or C++, LaTeX macros work similarly: you can think of them as direct text replacement, but the [details](https://www.overleaf.com/learn/latex/A_six-part_series:_How_do_TeX_macros_actually_work%3F) are quite complicated.
 
 ### Getting up and running
 
@@ -77,6 +68,10 @@ An example polynomial is \(f(x) = 2.45x + 7.2\).
 which is placed inside `\( ... \)` delimiters.
 
 ### Document structure
+
+There are two kinds of structure in LaTeX: that of the (output) document being written, and that of the LaTeX file itself. A LaTeX file consists of two main parts: the "preamble", where packages are set up and other configuration happens, and the actual document body, where the text to be displayed goes (think `<head>` and `<body>` from HTML).
+
+The most common document class, the `article`, defines document structure using `\section{...}`, `\subsection{...}`, and `\subsubsection{...}`, while `report` and `book` add a top-level `\chapter{...}`.
 
 ### Topics to cover
 
