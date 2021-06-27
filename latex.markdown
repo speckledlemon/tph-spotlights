@@ -101,5 +101,6 @@ Markdown writers may know the use of `$ ... $` and `$$ ... $$` delimiters to ent
 
 ### Resources
 
+- LaTeX Wikibook: <https://en.wikibooks.org/wiki/LaTeX>
 - LaTeX Wiki: <https://latex.wikia.org/wiki/Main_page>
 - TeX.SE, the LaTeX Stack Exchange: <https://tex.stackexchange.com/>
